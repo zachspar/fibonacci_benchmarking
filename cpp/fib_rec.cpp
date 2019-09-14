@@ -2,18 +2,20 @@
 
 using namespace std;
 
+typedef unsigned long long int vlong;
+
 
 void usage() {
     cout << "Usage:  ./fib_rec  <NUMBER>\n\n"; 
 }
 
-long long fib(int num) {
-    if (num == 0)
-        return 0;
-    else if (num == 1)
-        return 1;
+vlong fib(vlong num, vlong a = 0, vlong b = 1) {
+    if (num == (vlong)0)
+        return (vlong)a;
+    else if (num == (vlong)1)
+        return (vlong)b;
     else
-        return fib(num-1) + fib(num-2);
+        return fib(num-(vlong)1, b, (vlong)(a + b));
 }
 
 int main(int argc, char** argv) {
@@ -23,7 +25,7 @@ int main(int argc, char** argv) {
         exit(1);
     }
 
-    int num = stoi(argv[1]);
+    vlong num = static_cast<vlong>(stoi(argv[1]));
     cout << fib(num) << endl;
 }
 

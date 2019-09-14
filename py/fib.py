@@ -5,13 +5,13 @@ def usage():
     print("Usage: python3 fib.py <NUMBER> ")
 
 
-def fib(num):
+def fib(num, a=0,b=1):
     if num == 0:
-        return 0
+        return a
     elif num == 1:
-        return 1
+        return b
     else:
-        return fib(num-1) + fib(num-2)
+        return fib(num-1, b, a+b)
 
 
 def main():
@@ -19,7 +19,7 @@ def main():
         usage()
         raise(Exception("Error: not enough input arguments!"))
 
-    fib(int(sys.argv[1]))
+    print(fib(int(sys.argv[1])))
 
 
 if __name__ == "__main__":

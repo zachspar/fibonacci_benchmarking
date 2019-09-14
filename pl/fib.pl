@@ -3,14 +3,16 @@ use strict;
 # std fib calc in recursive impl
 sub fib {
     my $num = shift;
+    my $a = shift // 0; # defualt 0
+    my $b = shift // 1; # default 1
     if ($num == 0) { # case 1
-        return 0;
+        return $a;
     }
     elsif ($num == 1) { # case 2
-        return 1;
+        return $b;
     }
     else { # case 3
-        return fib($num - 1) + fib($num - 2);
+        return fib($num - 1, $b, $a + $b);
     }
 }
 
