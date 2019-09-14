@@ -8,6 +8,9 @@
  )
 )
 
-(display "Fib for 40:\n")
-(fib 40)
+; see run.pl as to how this works :) haha
+; reads num from input, fib is called on this number
+(fib
+ (read (current-input-port))
+)
 
