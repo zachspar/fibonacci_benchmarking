@@ -7,4 +7,5 @@ env/
 *.test
 
 fib_rec
+*.csv
 
