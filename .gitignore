@@ -4,6 +4,7 @@ env/
 *.swp
 *.out
 *.time
+*.test
 
 fib_rec
 
