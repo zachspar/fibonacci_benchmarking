@@ -18,7 +18,7 @@ sub create_tmp_nums {
     print "Creating temp number dirs [1-40]\n";
 
     system "mkdir ./tmp";
-    my $cmd = "touch ./tmp/{1..40}.txt";
+    my $cmd = "touch ./tmp/{1..500}.txt";
     print "Running command ::   $cmd\n";
 
     my $code = system $cmd;
@@ -86,7 +86,7 @@ sub main {
             }
         }
         else {
-            for (my $i = 0; $i <= 40; ++$i) {
+            for (my $i = 0; $i <= 500; ++$i) {
             # iterate thru hash
                 my $cmd = $files{$_}[0];
                 my $file = $files{$_}[1];
