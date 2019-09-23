@@ -5,7 +5,7 @@ def usage():
     print("Usage: python3 fib.py <NUMBER> ")
 
 
-def fib(num, a=0,b=1):
+def fib(num, a=1,b=1):
     if num == 0:
         return a
     elif num == 1:
