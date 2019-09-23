@@ -56,7 +56,8 @@ sub main {
         "cpp" => ["./", "cpp/fib_rec"],
         "perl"  => ["perl ", "pl/fib.pl"],
         "python" => ["python3 ", "py/fib.py"],
-        "scheme" => ["/Applications/scheme/bin/plt-r5rs ", "fib.scm<"],
+        # "scheme" => ["/Applications/scheme/bin/plt-r5rs ", "fib.scm<"],
+        "rust" => ["./rs/target/debug/", "rs"],
     );
 
     # open outfile
@@ -86,7 +87,7 @@ sub main {
             }
         }
         else {
-            for (my $i = 0; $i <= 500; ++$i) {
+            for (my $i = 0; $i <= 40; ++$i) {
             # iterate thru hash
                 my $cmd = $files{$_}[0];
                 my $file = $files{$_}[1];
