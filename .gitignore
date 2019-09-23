@@ -10,3 +10,7 @@ fib_rec
 *.csv
 tmp/
 
+rs/target/
+
+*target*
+
