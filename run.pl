@@ -56,7 +56,7 @@ sub main {
         "cpp" => ["./", "cpp/fib_rec"],
         "perl"  => ["perl ", "pl/fib.pl"],
         "python" => ["python3 ", "py/fib.py"],
-        # "scheme" => ["/Applications/scheme/bin/plt-r5rs ", "fib.scm<"],
+        # "scheme" => ["scm ", "fib.scm<"],
         "rust" => ["./rs/target/debug/", "rs"],
     );
 
