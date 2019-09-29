@@ -4,7 +4,7 @@ use std::env;
 // and non-tail recursive impl
 fn fib(num: i128) -> i128 {
     match num {
-        0 => 1,
+        0 => 0,
         1 => 1,
         _ => fib(num-1) + fib(num-2)
     }

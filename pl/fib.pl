@@ -3,7 +3,7 @@ use strict;
 # std fib calc in recursive impl
 sub fib {
     my $num = shift;
-    my $a = shift // 1; # defualt 0
+    my $a = shift // 0; # defualt 0
     my $b = shift // 1; # default 1
     if ($num == 0) { # case 1
         return $a;

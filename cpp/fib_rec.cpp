@@ -9,7 +9,7 @@ void usage() {
     cout << "Usage:  ./fib_rec  <NUMBER>\n\n"; 
 }
 
-vlong fib(vlong num, vlong a = 1, vlong b = 1) {
+vlong fib(vlong num, vlong a = 0, vlong b = 1) {
     if (num == (vlong)0)
         return (vlong)a;
     else if (num == (vlong)1)
